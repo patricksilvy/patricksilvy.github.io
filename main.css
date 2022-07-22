@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 50px;
+    width: 100vw;
+    background-color: #333333;
+}
+
+.menu ul { display: flex; }
+
+.menu ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 0.8em;
+    padding: 0.5em 1.5em;
+    transition: font-size 0.5s;
+    transition-timing-function: ease;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 10vw;
+    height: 700px;
+    width: 100vw;
+    padding-top: 50px;
+}
+
+header {
+    background-image: url("./assets/montain.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.5em;
+    margin: 20px 0;
+}
+
+header a {
+    text-decoration: none;
+    color: #333333;
+    background-color: aliceblue;
+    margin-top: 20px;
+    padding: 0.8em 3em;
+    border: none;
+    border-radius: 25px;
+}
