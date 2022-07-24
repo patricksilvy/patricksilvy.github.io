@@ -7,12 +7,23 @@
     <title>Patrick Silvy</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/menu.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/aboult.css">
     
 </head>
 <body>
+
+    <nav class="menu-mobile">
+        <span class="icon" id="mobileIcon">
+            <i class="fa fa-solid fa-bars notActiveMobileNav"></i>
+            <i class="fa fa-solid fa-arrow-down activeMobileNav" style="display: none;"></i>
+        </span>
+    </nav>
+
     <nav class="menu">
         <ul>
             <li>
@@ -32,6 +43,7 @@
             </li>
         </ul>
     </nav>
+
     <header id="start">
         <h2>Olá, Meu Nome É</h2>
         <h1>Patrick E. Silvy</h1>
@@ -74,12 +86,12 @@
         </div>
     </section>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/80c7435d25.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+
     <script>
-        const elements = document.querySelectorAll('.table-skills article')
-        elements.forEach((element, index) => {
-            element.addEventListener("mouseenter", () => element.style.transform = "scale(1.2)")
-            element.addEventListener("mouseleave", () => element.style.transform = "scale(1)")
-        })
+        ScrollReveal().reveal('.aboult');
     </script>
 </body>
 </html>

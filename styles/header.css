@@ -1,0 +1,52 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 10vw;
+    height: 500px;
+    width: 100vw;
+    padding-top: 50px;
+}
+
+header {
+    background-image: url("../assets/montain.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header h1 {
+    font-size: 4em;
+    margin: 10px 0;
+}
+
+header h2 {
+    font-weight: 600;
+}
+
+header a {
+    text-decoration: none;
+    color: #333333;
+    background-color: aliceblue;
+    margin-top: 20px;
+    padding: 0.8em 3em;
+    border: none;
+    border-radius: 25px;
+}
+
+@media (max-width: 780px) {
+    header h1 {font-size: 9vw;}
+    header h2 {font-size: 5vw;}
+    header h3 {font-size: 4vw;}
+
+    header a {
+        font-size: 3vw;
+        padding: 0.8em 6vw;
+    }
+
+    header {
+        height: 100vw;
+        justify-content: center;
+    }
+}
