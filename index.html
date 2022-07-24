@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="./styles/menu.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/aboult.css">
+    <link rel="stylesheet" href="./styles/skill.css">
+    <link rel="stylesheet" href="./styles/project.css">
+    <link rel="stylesheet" href="./styles/contact.css">
     
 </head>
 <body>
-
     <nav class="menu-mobile">
         <span class="icon" id="mobileIcon">
             <i class="fa fa-solid fa-bars notActiveMobileNav"></i>
@@ -52,6 +54,7 @@
             Saiba Mais
         </a>
     </header>
+
     <section id="aboult" class="aboult">
         <img src="./assets/montain.jpg" alt="maintanha">
         <div class="text">
@@ -60,38 +63,142 @@
             <p>
                 Meu nome é Patrick E. Silvy, tenho domínio no desenvolvimento web, 
                 usando Html5, Css3 e JavaScript desenvolvi as minhas primeiras aplicações 
-                web com Node.Js como ambiente de back-end e utilizando jQuery para a integração 
-                do JavaScript no Html agora estou aprendendo a usar a biblioteca React e React Native.
+                web. 
             </p>
-            <div class="table-skills">
-                <article>
-                    JavaScript
-                </article>
-                <article>
-                    Html5
-                </article>
-                <article>
-                    Css3
-                </article>
-                <article>
-                    Node
-                </article>
-                <article>
-                    jQuery
-                </article>
-                <article>
-                    React
-                </article>
-            </div> 
+            <p>
+                Com o Node.Js como ambiente back-end com express e jQuery para a integração
+                do JavaScript no Html. 
+            </p>
+            <p>
+                Usando o Git para versionamento de projetos e o Github para a criação de 
+                repositórios para meus projetos.
+            </p>
+            <p>
+                Atualmente estou aprendendo desenvolver aplicações com a biblioteca React.js
+            </p>
+
+    </section>
+
+    <section id="skill" class="skill">
+        <div class="table-skills">
+            <article>
+                <img src="./assets/javascript.png" alt="javascript" width="30px"> <br>
+                JavaScript <br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </article>
+            <article>
+                <img src="./assets/html.png" alt="html" width="30px"> <br>
+                Html5 <br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </article>
+            <article>
+                <img src="./assets/css.png" alt="css" width="30px"> <br>
+                Css3 <br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </article>
+            <article>
+                <img src="./assets/nodejs.png" alt="node" width="30px"> <br>
+                Node <br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </article>
+            <article>
+                <img src="./assets/jquery.svg" alt="jquery" width="30px"> <br>
+                jQuery <br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </article>
+            <article>
+                <img src="./assets/react.svg" alt="react" width="30px"> <br>
+                React <br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </article>
+        </div> 
+    </div>
+    </section>
+
+    <section id="project" class="project">
+        <h1>Meus Projetos</h1>
+        <div class="projects">
+            <article>
+                <div class="image">
+                    <img src="./assets/montain.jpg" alt="">
+                </div>
+                <div class="legend">
+                    <h2>Titulo</h2>
+                    <a href="#">Saiba Main</a>
+                </div>
+            </article>
+            <article>
+                <div class="image">
+                    <img src="./assets/montain.jpg" alt="">
+                </div>
+                <div class="legend">
+                    <h2>Titulo</h2>
+                    <a href="#">Saiba Main</a>
+                </div>
+            </article>
+            <article>
+                <div class="image">
+                    <img src="./assets/montain.jpg" alt="">
+                </div>
+                <div class="legend">
+                    <h2>Titulo</h2>
+                    <a href="#">Saiba Mais</a>
+                </div>
+            </article>
+            <article>
+                <div class="image">
+                    <img src="./assets/montain.jpg" alt="">
+                </div>
+                <div class="legend">
+                    <h2>Titulo</h2>
+                    <a href="#">Saiba Mais</a>
+                </div>
+            </article>
         </div>
     </section>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <section id="contact" class="contact">
+        <h1>Fale Comigo</h1>
+        <div class="divider">
+            <div class="mark-divider"></div>
+        </div>  
+        <div class="social">
+            <a href="#">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-github"></i>
+            </a>
+        </div>
+        <h3>Patrick E. Silvy ©.  All rights reserved.</h3>
+    </section>
+
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
     <script src="https://kit.fontawesome.com/80c7435d25.js" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
-
-    <script>
-        ScrollReveal().reveal('.aboult');
-    </script>
 </body>
 </html>

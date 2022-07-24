@@ -1,5 +1,4 @@
 .aboult {
-    visibility: hidden;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -31,25 +30,6 @@
     text-justify: inter-word;
 }
 
-.aboult .text .table-skills {
-    margin-top: 20px;
-    display: grid;
-    width: 100%;
-    background-color: #333333;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-
-.aboult .text .table-skills article {
-    background-color: #333333;
-    color: aliceblue;
-    font-weight: 600;
-    padding: 1em;
-    text-align: center;
-    transition: transform 0.5s;
-    transition-timing-function: ease;
-}
 
 @media (max-width: 780px) {
     .aboult {
@@ -70,10 +50,5 @@
         height: auto;
         width: 80vw;
         font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); 
-    }
-
-    .aboult .text .table-skills {
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr;
     }
 }

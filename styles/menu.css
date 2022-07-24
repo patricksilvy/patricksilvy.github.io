@@ -6,6 +6,7 @@
     height: 50px;
     width: 100vw;
     transition: top 0.3s;
+    z-index: 100;
 }
 
 .menu ul { display: flex; }
@@ -40,7 +41,7 @@
     height: 50px;
     width: 100vw;
     transition: top 0.3s;
-    background-color: #333333;
+    z-index: 100;
 }
 
 .menu,

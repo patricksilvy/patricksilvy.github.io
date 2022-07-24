@@ -1,0 +1,33 @@
+.skill .table-skills {
+    margin-top: 20px;
+    display: grid;
+    width: 100%;
+    background-color: #333333;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+.skill .table-skills article {
+    background-color: #333333;
+    color: aliceblue;
+    font-weight: 600;
+    padding: 1em;
+    text-align: center;
+    transition: transform 0.5s;
+    transition-timing-function: ease;
+}
+
+@media (max-width: 820px) {
+    .skill .table-skills {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width: 780px) {
+    .skill .table-skills {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
