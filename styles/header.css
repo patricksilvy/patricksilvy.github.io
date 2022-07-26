@@ -1,31 +1,45 @@
 header {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
-    padding-left: 10vw;
     height: 500px;
     width: 100vw;
     padding-top: 50px;
+    background-color: #212121;
+    overflow-y: hidden;
 }
 
-header {
-    background-image: url("../assets/montain.jpg");
+header .img {
+    width: 100%;
+    height: 500px;
+    background-image: url('../assets/patrickImg.png');
+    background-position: top;
+    background-position-x: left;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-size: 600px;
+    position: absolute;
+    z-index: 1;
 }
 
-header h1 {
+header .text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+header .text h1 {
     font-size: 4em;
     margin: 10px 0;
 }
 
-header h2 {
+header .text h2 {
     font-weight: 600;
 }
 
-header a {
+header .text a {
     text-decoration: none;
     color: #333333;
     background-color: aliceblue;
@@ -36,17 +50,23 @@ header a {
 }
 
 @media (max-width: 780px) {
-    header h1 {font-size: 9vw;}
-    header h2 {font-size: 5vw;}
-    header h3 {font-size: 4vw;}
+    header .text h1 {font-size: 9vw;}
+    header .text h2 {font-size: 5vw;}
+    header .text h3 {font-size: 4vw;}
 
-    header a {
+    header .text a {
         font-size: 3vw;
         padding: 0.8em 6vw;
     }
 
-    header {
-        height: 100vw;
-        justify-content: center;
+    header .img {
+        background-size: 550px;
+    }
+
+}
+
+@media (max-width: 545px) {
+    header .img {
+        background-position-x: right;
     }
 }

@@ -4,9 +4,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    padding-top: 50px;
     width: 100vw;
     gap: 3em;
     height: 500px;
+    background-color: #212121;
 }
 
 .aboult img {

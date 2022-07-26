@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans', sans-serif;
 }
 
 html {
@@ -15,5 +14,19 @@ body::-webkit-scrollbar {
 }
 
 h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 500;
+    color: aliceblue;
+    font-size: 1.2em;
 }

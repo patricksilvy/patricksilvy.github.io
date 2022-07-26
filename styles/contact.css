@@ -1,6 +1,6 @@
 .contact {
     height: auto;
-    background-color: darkgrey;
+    background-color: #333333;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +9,7 @@
 }
 
 .contact h1 {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 800;
 }
 
@@ -25,7 +25,7 @@
 .contact .divider .mark-divider {
     height: 10px;
     width: 10vw;
-    background-color: royalblue;
+    background-color: #2CEE79;
 }
 
 .contact .social {
@@ -35,8 +35,15 @@
 }
 
 .contact .social a {
+    color: white;
     text-decoration: none;
     margin: 0 50px;
+    box-shadow: 8px 8px #2CEE79;
+    transition: box-shadow 0.5s;
+}
+
+.contact .social a:hover {
+    box-shadow: 0px 0px 0px 0px #2CEE79;
 }
 
 .contact .social a i {
@@ -45,8 +52,13 @@
     height: 1.5em;
     width: 1.5em;
     text-align: center;
-    background-color: pink;
+    background-color: #333333;
+    border: 1px solid #2CEE79;
+    transition: background-color 0.5s;
+}
 
+.contact .social a i:hover {
+    background-color: #2CEE79;
 }
 
 .contact h3 {
@@ -55,6 +67,10 @@
 }
 
 @media (max-width: 780px) {
+    .contact {
+        font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+    }
+
     .contact .social {
         display: flex;
         flex-direction: column;
@@ -63,7 +79,6 @@
     }
 
     .contact h1 {
-        font-size: 3em;
         margin-left: 1em;
         text-align: start;
     }
