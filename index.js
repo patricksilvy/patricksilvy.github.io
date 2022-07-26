@@ -3,6 +3,8 @@ const iconMobileNotActivate = document.querySelector('.notActiveMobileNav')
 const mobileIcon = document.querySelector('#mobileIcon')
 const menu  = document.querySelector('.menu')
 const skills = document.querySelectorAll('.table-skills article')
+const projects = document.querySelectorAll('.project .projects article img')
+
 const linksMenu = document.querySelectorAll('.menu ul li a')
 
 let activeMobileNav = false
@@ -15,9 +17,15 @@ window.addEventListener('scroll', hideMenu)
 const activate = (element) => element.style.display = 'flex'
 const notActivate = (element) => element.style.display = 'none'
 
-skills.forEach(skill => {
-    skill.addEventListener("mouseenter", () => skill.style.transform = "scale(1.2)")
+skills.forEach((skill, index) => {
+    skill.addEventListener("mouseenter", () => skill.style.transform = "scale(1.1)")
     skill.addEventListener("mouseleave", () => skill.style.transform = "scale(1)")
+
+    // if(index < projects.length) {
+    //     console.log(projects[index])
+    //     projects[index].addEventListener("mouseenter", () => projects[index].style.transform = "scale(1.5)")
+    //     projects[index].addEventListener("mouseleave", () => projects[index].style.transform = "scale(1)")
+    // }
 })
 
 

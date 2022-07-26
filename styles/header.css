@@ -41,12 +41,19 @@ header .text h2 {
 
 header .text a {
     text-decoration: none;
-    color: #333333;
-    background-color: aliceblue;
+    color: white;
+    background-color: #212121;
+    border: 1px solid #2CEE79;
     margin-top: 20px;
     padding: 0.8em 3em;
-    border: none;
     border-radius: 25px;
+    box-shadow: 4px 4px #2CEE79;
+    transition: box-shadow 0.5s, background-color 0.5s;
+}
+
+header .text a:hover {
+    background-color: #2CEE79;
+    box-shadow: 0px 0px #2CEE79;
 }
 
 @media (max-width: 780px) {
@@ -68,5 +75,9 @@ header .text a {
 @media (max-width: 545px) {
     header .img {
         background-position-x: right;
+    } 
+
+    header .text a {
+        box-shadow: 2px 2px #2CEE79;
     }
 }

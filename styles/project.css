@@ -40,6 +40,12 @@
 .project .projects article .image img {
     height: 60%;
     width: 85%;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.project .projects article .image img:hover {
+    box-shadow: 0px 0px 10px 2px #212121;
+    transform: scale(1.3);
 }
 
 .project .projects article .legend {
@@ -61,10 +67,8 @@
 .project .projects article .legend a {
     text-decoration: none;
     padding: 0.4em;
-    background-color: white;
-    color: #333333;
+    color: #2CEE79;
     border-radius: 25px;
-    margin: 5px 0;
     font-size: 0.6em;
 }
 
